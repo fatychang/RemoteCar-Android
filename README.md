@@ -2,8 +2,15 @@
 This project aims to develop an android APP to control a remote car which take the linear and angular wheel velocities for both left and right side. The APP provides a joystick UI allowing easy control of the remote car's position and a scroll bar to control the car's orientation (heading). The wireless communication protocol can be either TCP or UDP.
 
 ## Joystick
-**Joystick Initialization**
-First, you will need to implement a custom view. It can be achieve by overriding **onDraw**.
+###Joystick View
+
+First, you will need to implement a custom view. 
+```
+public class JoystickView extends View implements  Runnable{...}
+```
+
+###Joystick Initialization
+It can be achieve by overriding **onDraw**.
 The **onDraw** function is called whenever the view should render its content. The following codes make up the joystick UI.
 - Draw the main circle (largest) by calling **canvas.drawCircle** where the radius is defined to the joystick radius.
 - Draw the secodary circle and set it to be half of the joystick radius.
