@@ -56,8 +56,13 @@ The following fucntions will be called when a certain event is triggered.
     }
 ```
 **onMeasure**: 
+
 **onTouchEvent**: Called when a touch screen motion event occurs so the position information of the touch spot is obtained.
+
 **onDraw**: The **onDraw** function is called whenever the view should render its content. 
+
 **getAngle**: Return the joystick angle with respect to the center
+
 **getPower**: Return the power(amplitiude) from the joystick (ranges from 0-100)
+
 **getDirection**: 
